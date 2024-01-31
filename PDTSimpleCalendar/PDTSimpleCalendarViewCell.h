@@ -121,4 +121,9 @@
  */
 - (void)refreshCellColors;
 
+/**
+ *  Reflect the colors for the circle and the text, with setting the selected state
+ */
+- (void)setDateSelected:(BOOL)selected;
+
 @end

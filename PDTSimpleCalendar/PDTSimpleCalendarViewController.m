@@ -207,8 +207,8 @@ static const NSCalendarUnit kCalendarUnitYMD = NSCalendarUnitYear | NSCalendarUn
     }
 
 
-    [[self cellForItemAtDate:_selectedDate] setSelected:NO];
-    [[self cellForItemAtDate:startOfDay] setSelected:YES];
+    [[self cellForItemAtDate:_selectedDate] setDateSelected:NO];
+    [[self cellForItemAtDate:startOfDay] setDateSelected:YES];
 
     _selectedDate = startOfDay;
 
