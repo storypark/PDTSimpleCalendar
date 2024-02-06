@@ -113,9 +113,8 @@ const CGFloat PDTSimpleCalendarCircleSize = 32.0f;
     [self setCircleColor:isToday selected:self.selected];
 }
 
-- (void)setSelected:(BOOL)selected
+- (void)setDateSelected:(BOOL)selected
 {
-    [super setSelected:selected];
     [self setCircleColor:self.isToday selected:selected];
 }
 

@@ -207,8 +207,8 @@ static const NSCalendarUnit kCalendarUnitYMD = NSCalendarUnitYear | NSCalendarUn
     }
 
 
-    [[self cellForItemAtDate:_selectedDate] setSelected:NO];
-    [[self cellForItemAtDate:startOfDay] setSelected:YES];
+    [[self cellForItemAtDate:_selectedDate] setDateSelected:NO];
+    [[self cellForItemAtDate:startOfDay] setDateSelected:YES];
 
     _selectedDate = startOfDay;
 
@@ -392,7 +392,7 @@ static const NSCalendarUnit kCalendarUnitYMD = NSCalendarUnitYear | NSCalendarUn
     }
 
     if (isSelected) {
-        [cell setSelected:isSelected];
+        [cell setDateSelected:isSelected];
     }
 
     //If the current Date is not enabled, or if the delegate explicitely specify custom colors
